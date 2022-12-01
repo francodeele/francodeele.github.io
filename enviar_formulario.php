@@ -1,32 +1,16 @@
 <?php
-// mail de destino: cambiarlo por tu mail personal
 
 $enviaPara = 'franco.delaurentis@davinci.edu.ar'; 
 
-// subject del mail: el asunto que quiero que muestre
 
 $subject = 'Contacto para dieta personalizada'; 
 
-/* ruta relativa desde ESTE documento al html que quiero que se abra después de mandar el mail. 
-
-También, en vez de utilizar otro html para el mensaje de enviado, 
-se podría volver al mismo donde se encuentra el formulario, pero, 
-aún así, hay que informar que el mail fue enciado para que al usuario 
-no se le generen dudas ya que el php no se verá en pantalla.
-
-Para ello, se puede poner en target una caja que estuviera con display none
- en el mismo html que contiene el formulario y que al enviar el mail y volver a ese mismo html,
-  se ajuste display block al entrar en target (en vez de ponerla en target con un vínculo lo hacemos al 
-  volver desde el php luego de enviar el mail), por ejemplo, contacto.html#enviado 
-  (si tenemos una caja con id enviado en display none y una regla #enviado:target que la ponga en display block, 
-  solo se hará visible cuando desde el php se navegue al html poniendo en target a esa caja). */
-
-$enviado="index.html#gracias";
+$enviado="../index.html#gracias";
 
 
 
 
-//DE ACÁ PARA ABAJO NO TOCAR...
+
 
 $mensaje = '';
 $primero = true;
